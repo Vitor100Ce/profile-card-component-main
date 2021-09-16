@@ -1,12 +1,20 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Kumbh Sans';
    
 }
 
 body{
     height: 100vh;
     font-size: 16px;
+    background-color: hsl(185, 75%, 39%);
+    background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat no-repeat;
+    background-position: -10% -19rem, 120% 20rem;
+    background-size: 50rem, 50rem;
+    
+    
 }
 
 .flex{
@@ -20,19 +28,20 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 25rem;
-    height: 22rem;
-    border: 2px solid green;
-    border-radius: 1rem;
+    width: 22rem;
+    height: 25rem;
+    border-radius: 1.2rem;
     position: relative;
+    background-color: #fff;
     background-image: url(../images/bg-pattern-card.svg);
     background-repeat: no-repeat;
     background-size: 100% 35%;
+    color: hsl(229, 23%, 23%);
 }
 
 .dados{
     position: absolute;
-    bottom: 28%;
+    bottom: 34%;
     text-align: center;
     display: inline-block;
 }
@@ -50,14 +59,51 @@ img{
 .dados__name{
     margin-top: .7rem;
     margin-bottom: .5rem;
+    font-size: 18px;
+}
+
+.dados__name span{
+    font-weight: 400;
+}
+
+.dados__address{
+    font-style: normal;
+    
 }
 
 .statistic{
+    display: flex;
     align-self: flex-end;
-    justify-content: space-between;
-    border: 2px solid red;
-    width: 100%;
+    justify-content: space-around;
+    text-align: center;
+    width: 100%; 
+    padding: 1.25rem 2.1rem;
+    border-top: solid 1px hsl(0, 0%, 59%);
+    color: hsl(229, 23%, 23%);
 }
+
+.statistic__card p{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.statistic__card h4{
+    font-size: 12px;
+    letter-spacing: .1rem;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 35rem) {
+    body{
+        background-position: -600% -19rem, 850% 20rem;
+        background-size: 30rem, 30rem;
+    }
+}
+
+
+
+
+   
 
 
 
