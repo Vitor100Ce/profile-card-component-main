@@ -1,16 +1,64 @@
 *{
     margin: 0;
     padding: 0;
+   
 }
 
 body{
-    width: 100vw;
     height: 100vh;
+    font-size: 16px;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;  
 }
 
 .container{
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 100%;
+    justify-content: center;
+    width: 25rem;
+    height: 22rem;
+    border: 2px solid green;
+    border-radius: 1rem;
+    position: relative;
+    background-image: url(../images/bg-pattern-card.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 35%;
 }
+
+.dados{
+    position: absolute;
+    bottom: 28%;
+    text-align: center;
+    display: inline-block;
+}
+
+.dados__imgg{
+    text-align: center;
+   
+}
+
+img{
+    border-radius: 50%;
+    border: #fff solid 6px;  
+}
+
+.dados__name{
+    margin-top: .7rem;
+    margin-bottom: .5rem;
+}
+
+.statistic{
+    align-self: flex-end;
+    justify-content: space-between;
+    border: 2px solid red;
+    width: 100%;
+}
+
+
+
+
